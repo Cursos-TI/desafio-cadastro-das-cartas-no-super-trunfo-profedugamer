@@ -32,7 +32,7 @@ int main() {
     printf("Insira o código da primeira carta: \n");
     scanf("%s", &codigo);
     printf("Insira o nome da cidade: \n");
-    scanf(" %[^\n]", &nome); //Entrada para aceitar a quebra de linha no nome das cidades. Comando: %[^\n]
+    scanf(" %[^\n]", &nome); //Entrada para aceitar espaço no nome das cidades. Comando: %[^\n]
     printf("Insira a população da cidade: \n");
     scanf("%d", &populacao);
     printf("Insira o valor da área (km²): \n");
