@@ -15,6 +15,8 @@ int main() {
     float area;
     double pib;
     int pontos_turisticos;
+    float densidade_populacional, pib_per_capita;
+
 
     // Descrição do jogo Super Trunfo Países
     printf("Bem vindo ao jogo Super Trunfo Países\n\n");
@@ -41,6 +43,14 @@ int main() {
     printf("Insira a quantidade de pontos turísticos: \n");
     scanf("%d", &pontos_turisticos);
 
+    //Desafio aventureiro:
+    //Foram adicionadas duas variáveis novas no inicio do documento. Elas são: Densidade populacional e PIB per Capita
+    //Essas variáveis serão calculadas automaticamente
+    //Densidade Populacional: População dividida pela área da cidade.
+    //PIB per Capita: PIB total dividido pela população.
+    densidade_populacional = (float) populacao / area;
+    pib_per_capita = (float) pib / populacao;
+
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
@@ -50,7 +60,11 @@ int main() {
     printf("População: %d\n", populacao);
     printf("Área %.2f km²\n", area);
     printf("PIB: %.2lf\n", pib);
-    printf("Pontos Turisticos: %d\n\n", pontos_turisticos);
+    printf("Pontos Turisticos: %d\n", pontos_turisticos);
+
+    //Novos printf do programa - nível aventureiro
+    printf("A densidade populacional é: %.2f\n", densidade_populacional);
+    printf("O PIB per Capita é: %.2f\n", pib_per_capita);
 
     return 0;
 }
