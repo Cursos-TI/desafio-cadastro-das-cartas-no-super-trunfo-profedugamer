@@ -1,10 +1,8 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
+// Desafio 1 - Super Trunfo Países - Cadastro das cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
@@ -46,9 +44,9 @@ int main() {
 
     //Entrada de dados da primeira carta
     printf("Insira o código da primeira carta: \n");
-    scanf("%s", &codigo_da_cidade);
+    scanf("%s", codigo_da_cidade);
     printf("Insira o nome da cidade: \n");
-    scanf(" %[^\n]", &nome); //Entrada para aceitar espaço no nome das cidades. Comando: %[^\n]
+    scanf(" %[^\n]", nome); //Entrada para aceitar espaço no nome das cidades. Comando: %[^\n]
     printf("Insira a população da cidade: \n");
     scanf("%d", &populacao);
     printf("Insira o valor da área (km²): \n");
@@ -60,9 +58,9 @@ int main() {
 
     //Entrada de dados da segunda carta
     printf("\nInsira o código da segunda carta: \n");
-    scanf("%s", &codigo_da_cidade2);
+    scanf("%s", codigo_da_cidade2);
     printf("Insira o nome da cidade: \n");
-    scanf(" %[^\n]", &nome2); //Entrada para aceitar espaço no nome das cidades. Comando: %[^\n]
+    scanf(" %[^\n]", nome2); //Entrada para aceitar espaço no nome das cidades. Comando: %[^\n]
     printf("Insira a população da cidade: \n");
     scanf("%d", &populacao2);
     printf("Insira o valor da área (km²): \n");
@@ -88,6 +86,7 @@ int main() {
     pib_per_capita2 = (float) pib2 / populacao2;
 
     //Desafio 3 - Mestre - Cálculo do Superpoder - Primeira carta e segunda carta
+    // O superpoder é calculado por meio da soma de todos os atributos
     superpoder = (float) populacao + area + pib + pontos_turisticos + densidade_populacional + pib_per_capita;
     superpoder2 = (float) populacao2 + area2 + pib2 + pontos_turisticos2 + densidade_populacional2 + pib_per_capita2;
 
